@@ -60,9 +60,58 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
 
 <h4 align="center">Installation</h4>
 
+<h6 align="center"><a href="https://iconscout.com">✔️</a> Requirements</h6>
+
+<p align="center">
+    <img width="10%" src="https://cdn.iconscout.com/icon/free/png-256/php-3629567-3032350.png" alt="PHP Logo">
+    <img width="10%" src="https://cdn.iconscout.com/icon/free/png-256/node-js-1-1174935.png" alt="Node Logo">
+    <img width="10%" src="https://cdn.iconscout.com/icon/free/png-256/mysql-3628940-3030165.png" alt="MySQL Logo">
+    <img width="10%" src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="Vue Logo">
+    <img width="10%" src="https://cdn.iconscout.com/icon/free/png-256/git-16-1175195.png" alt="Git Logo">
+</p>
+
+```typescript
+    return [
+        {
+            dependency: "PHP",
+            url: "https://www.php.net"
+            version: 7.4.21
+        },
+        {
+            dependency: "Node",
+            url: "https://nodejs.org"
+            version: 16.4.1
+        },
+        {
+            dependency: "MySQL",
+            url: "https://www.mysql.com"
+            version: 8.0.25
+        },
+        {
+            dependency: "Vue",
+            url: "https://vuejs.org",
+            version: 2
+        },
+        {
+            dependency: "Git",
+            url: "https://git-scm.com",
+            version:  2.32.0
+        }
+    ];
+```
+
 <h6 align="center">Backend</h6>
 
 ```bash
     composer create-project laravel/laravel backend
 ```
+
 <h6 align="center">Frontend</h6>
+
+<h4 align="center">Run Application</h4>
+
+> Inside backend diretory, run Laravel application
+
+```bash
+    php artisan serve
+```
