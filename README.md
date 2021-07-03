@@ -33,19 +33,29 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
 <h6>Atenção para os seguintes pontos:</h6>
 
 - A aplicação deve gerar uma página web simples para exibição no navegador;
+
 - Você pode usar qualquer linguagem de programação para resolver o desafio. Procure apresentar um código bem escrito tanto no frontend quanto no backend;
+
 - Formato de entrega: um repositório git (no http://www.github.com ou no https://gitlab.com);
+
 - Implementação de testes unitários;
+
 - O projeto deve possuir um `README` (documentação simples) com instruções de instalação e utilização, bem como quaisquer outras que você achar necessário;
 
 <h6>Os critérios de avaliação são os seguintes: </h6>
 
 - Entendimento do problema;
+
 - Solução desenvolvida;
+
 - Organização do código-fonte;
+
 - Uso da API;
+
 - Apresentação dos resultados;
+
 - Documentação;
+
 - Simplicidade;
 
 <h4 align="center">Installation</h4>
