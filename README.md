@@ -66,6 +66,8 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
 
         <span>❌ JWT Auth</span>
 
+        <span>❌ Optimize requests for the external API</span>
+
         <span>✔️ Separation of Front-end and Backend</span>
     };
 ```
