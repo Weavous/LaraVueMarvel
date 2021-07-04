@@ -12,7 +12,8 @@ const router = new VueRouter({
   mode: "history",
   routes: [
     { path: "/", component: Root },
-    { path: "/character", component: Character }
+    { path: "/character", component: Character },
+    { path: "/character/:slug", component: Character, props: true }
   ]
 });
 

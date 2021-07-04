@@ -51,6 +51,30 @@ class MarvelHttpRequestController extends Controller
     }
 
     /**
+     * Searchs for an character.
+     * 
+     * @param Request $request
+     * @param Response $response
+     * 
+     * @return JsonResponse
+     */
+    public function character(Request $request, Response $response): JsonResponse
+    {
+        $character = $this->getCharacterByName($request->character);
+
+        if (count((array) $character) === 0) {
+            return response()->json([
+                "status" => false
+            ]);
+        }
+
+        return response()->json([
+            "status" => true,
+            "character" => $character
+        ]);
+    }
+
+    /**
      * Returns a story.
      * 
      * @param Request $request

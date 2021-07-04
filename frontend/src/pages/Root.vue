@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <div class="p-3">
       <div class="row d-flex justify-content-center">
         <div v-for="(character, key) in this.characters" :key="key" class="d-flex justify-content-center col-sm-6 col-md-4 col-lg-4 p-0">

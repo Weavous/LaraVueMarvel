@@ -21,6 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::prefix("v1")->group(function () {
     Route::prefix("marvel")->group(function () {
         Route::get("characters", [App\Http\Controllers\MarvelHttpRequestController::class, "characters"]);
+        Route::get("character", [App\Http\Controllers\MarvelHttpRequestController::class, "character"]);
         Route::get("stories", [App\Http\Controllers\MarvelHttpRequestController::class, "stories"]);
     });
 });
