@@ -151,8 +151,34 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
 
 <h4 align="center">Run Application</h4>
 
-> Inside backend diretory, run Laravel application
+> Inside backend diretory, run Laravel Application
+
+```bash
+    composer i
+```
+
+```bash
+    cp .env.example .env
+```
+
+```bash
+    php artisan key:generate
+```
 
 ```bash
     php artisan serve
 ```
+
+> Inside frontend diretory, run Vue Application
+
+```bash
+    npm i
+```
+
+```bash
+    npm run dev
+```
+
+<h6>Atenção</h6>
+
+* A porta esperada para enviar as requisições é `8000`, se outra for estabelecida, alterar o conteúdo de `baseURL` em `frontend\src\services\http.js`.
