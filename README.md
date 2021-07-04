@@ -141,6 +141,14 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
     vue init webpack-simple frontend
 ```
 
+```bash
+    npm	install	axios --save
+```
+
+```bash
+    npm install vue-router --save
+```
+
 <h4 align="center">Run Application</h4>
 
 > Inside backend diretory, run Laravel application
