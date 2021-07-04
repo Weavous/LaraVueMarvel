@@ -133,6 +133,14 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
 
 <h6 align="center">Frontend</h6>
 
+```bash
+    npm	install	-g vue-cli
+```
+
+```bash
+    vue init webpack-simple frontend
+```
+
 <h4 align="center">Run Application</h4>
 
 > Inside backend diretory, run Laravel application
