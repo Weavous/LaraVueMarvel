@@ -17,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::prefix("marvel")->group(function () {
+    Route::get("characters", [App\Http\Controllers\MarvelHttpRequestController::class, "characters"]);
+    Route::get("stories", [App\Http\Controllers\MarvelHttpRequestController::class, "stories"]);
+});

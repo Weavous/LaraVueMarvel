@@ -42,7 +42,7 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
 
 - O projeto deve possuir um `README` (documentação simples) com instruções de instalação e utilização, bem como quaisquer outras que você achar necessário;
 
-<h6>Os critérios de avaliação são os seguintes: </h6>
+<h6>Os critérios de avaliação são os seguintes:</h6>
 
 - Entendimento do problema;
 
@@ -57,6 +57,18 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
 - Documentação;
 
 - Simplicidade;
+
+<h4 align="center">Tasks</h4>
+
+```typescript
+    return {
+        <span>❌ Test Cases</span>
+
+        <span>❌ JWT Auth</span>
+
+        <span>✔️ Separation of Front-end and Backend</span>
+    };
+```
 
 <h4 align="center">Installation</h4>
 
@@ -75,27 +87,32 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
         {
             dependency: "PHP",
             url: "https://www.php.net"
-            version: 7.4.21
+            version: 7.4.21,
+            img: "https://cdn.iconscout.com/icon/free/png-256/php-3629567-3032350.png"
         },
         {
             dependency: "Node",
             url: "https://nodejs.org"
-            version: 16.4.1
+            version: 16.4.1,
+            img: "https://cdn.iconscout.com/icon/free/png-256/node-js-1-1174935.png"
         },
         {
             dependency: "MySQL",
             url: "https://www.mysql.com"
-            version: 8.0.25
+            version: 8.0.25,
+            img: "https://cdn.iconscout.com/icon/free/png-256/mysql-3628940-3030165.png"
         },
         {
             dependency: "Vue",
             url: "https://vuejs.org",
-            version: 2
+            version: 2,
+            img: "https://cdn.iconscout.com/icon/free/png-256/vue-282497.png"
         },
         {
             dependency: "Git",
             url: "https://git-scm.com",
-            version:  2.32.0
+            version:  2.32.0,
+            img: "https://cdn.iconscout.com/icon/free/png-256/git-16-1175195.png"
         }
     ];
 ```
@@ -104,6 +121,14 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
 
 ```bash
     composer create-project laravel/laravel backend
+```
+
+```bash
+    php artisan make:controller MarvelHttpRequestController
+```
+
+```bash
+    php artisan make:test App\Http\Controllers\MarvelHttpRequestControllerTest
 ```
 
 <h6 align="center">Frontend</h6>
