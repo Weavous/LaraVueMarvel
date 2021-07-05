@@ -197,3 +197,7 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
 <h6>Atenção</h6>
 
 * A porta esperada para enviar as requisições é `8000`, se outra for estabelecida, alterar o conteúdo de `baseURL` em `frontend\src\services\http.js`.
+
+* Caso ocorra algum erro na instalação das dependências do `Laravel` através do `Composer`, deve-se habilitar as extensões presentes no arquivo de configuração `php.ini`.
+
+* O local do arquivo de configuração `php.ini` pode ser visualizado digitando-se `php --ini` no terminal.
