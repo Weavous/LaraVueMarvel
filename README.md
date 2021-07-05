@@ -91,7 +91,7 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
     return [
         {
             dependency: "PHP",
-            url: "https://www.php.net"
+            url: "https://www.php.net",
             version: 7.4.21,
             img: "https://cdn.iconscout.com/icon/free/png-256/php-3629567-3032350.png"
         },
