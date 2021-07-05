@@ -82,6 +82,7 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
     <img width="10%" src="https://cdn.iconscout.com/icon/free/png-256/mysql-3628940-3030165.png" alt="MySQL Logo">
     <img width="10%" src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="Vue Logo">
     <img width="10%" src="https://cdn.iconscout.com/icon/free/png-256/git-16-1175195.png" alt="Git Logo">
+    <img width="10%" src="https://cdn.iconscout.com/icon/free/png-256/composer-285363.png" alt="Composer Logo">
 </p>
 
 ```typescript
@@ -115,6 +116,12 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
             url: "https://git-scm.com",
             version:  2.32.0,
             img: "https://cdn.iconscout.com/icon/free/png-256/git-16-1175195.png"
+        },
+        {
+            dependency: "Composer",
+            url: "https://getcomposer.org",
+            version: 2.1.3,
+            img: "https://cdn.iconscout.com/icon/free/png-256/composer-285363.png"
         }
     ];
 ```
