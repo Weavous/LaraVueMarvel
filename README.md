@@ -97,13 +97,13 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
         },
         {
             dependency: "Node",
-            url: "https://nodejs.org"
+            url: "https://nodejs.org",
             version: 16.4.1,
             img: "https://cdn.iconscout.com/icon/free/png-256/node-js-1-1174935.png"
         },
         {
             dependency: "MySQL",
-            url: "https://www.mysql.com"
+            url: "https://www.mysql.com",
             version: 8.0.25,
             img: "https://cdn.iconscout.com/icon/free/png-256/mysql-3628940-3030165.png"
         },
