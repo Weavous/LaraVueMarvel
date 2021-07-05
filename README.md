@@ -153,6 +153,12 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
 
 <h4 align="center">Run Application</h4>
 
+> Clone project
+
+```bash
+    git clone https://github.com/Weavous/LaraVueMarvel
+```
+
 > Inside backend diretory, run Laravel Application
 
 ```bash
