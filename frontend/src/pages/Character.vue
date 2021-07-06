@@ -4,86 +4,74 @@
       <div>
         <label for="search" class="form-label">Character</label>
         <input type="text" class="form-control" v-model="search" aria-describedby="search">
-        <div class="form-text">Enter the beginning of the character's name. We will search for you.</div>
+        <div class="form-text">Enter the Marvel's character name. We will search for you.</div>
       </div>
 
-      <button type="submit" v-on:click="find" class="btn btn-primary">Search for {{ search }}</button>
+      <button type="submit" v-on:click="find" class="btn btn-primary">
+        Search for {{ search }}
+      </button>
     </form>
 
-    <hr>
+    <Hr></Hr>
 
     <div class="row">
-      <div class="form-group col">
-        <label for="inputEmail4">Identifier</label>
-        <input type="email" class="form-control" placeholder="Identifier" readonly v-model="this.character.id">
-      </div>
-      <div class="form-group col">
-        <label for="inputEmail4">Name</label>
-        <input type="email" class="form-control" placeholder="Name" readonly v-model="this.character.name">
-      </div>
-      <div class="form-group col">
-        <label for="inputEmail4">Last Modified</label>
-        <input type="email" class="form-control" placeholder="Last Modified" readonly v-model="this.character.modified">
-      </div>
-      <div class="form-group col">
-        <label for="inputEmail4">Resource</label>
-        <input type="email" class="form-control" placeholder="Resource" readonly v-model="this.character.resourceURI">
-      </div>
+      <FormInput for="Identifier" :vModel="this.id"></FormInput>
+      <FormInput for="Name" :vModel="this.name"></FormInput>
+      <FormInput for="Last Modified" :vModel="this.modified"></FormInput>
+      <FormInput for="Resource" :vModel="this.resourceURI"></FormInput>
     </div>
 
-    <hr>
+    <Hr></Hr>
 
     <div class="row">
       <div class="form-floating">
-        <textarea class="form-control" readonly v-model="this.character.description"></textarea>
+        <textarea class="form-control" readonly v-model="this.description"></textarea>
       </div>
     </div>
 
-    <hr>
+    <Hr></Hr>
 
     <div class="overflow">
-      <Story :stories="this.character.stories.items"></Story>
+      <Story :stories="this.stories"></Story>
     </div>
   </div>
 </template>
 
 <script>
 import Story from "../components/Story.vue";
+import FormInput from "../components/FormInput.vue";
+import Hr from "../components/Hr.vue";
 
-import characters from '../services/characters.js';
+import characters from "../services/characters.js";
 
 export default {
   name: "Character",
-  components: {Story},
+  components: { Story, FormInput, Hr },
   data() {
     return {
-      search: "",
-      character: {
-        id: 0,
-        name: "",
-        description: "",
-        modified: "",
-        thumbnail: "",
-        resourceURI: "",
-        stories: {
-          available: 0,
-          collectionURI: "",
-          items: [],
-          returned: 0
-        }
+      search: "Thanos",
+      id: 0,
+      name: "Thanos",
+      description: "Any",
+      modified: "9999-999-99T99:99:99-9999",
+      thumbnail: {
+        path: "www.any.com",
+        extension: "jpg"
       },
+      resourceURI: "www.any.com",
       stories: []
     };
   },
   props: {
     slug: {
       type: String,
-      required: false
-    }
+      required: false,
+    },
   },
   mounted() {
-    if(typeof undefined !== typeof this.slug) {
+    if (typeof undefined !== typeof this.slug) {
       this.search = this.slug;
+
       this.findCharacter(this.slug);
     }
   },
@@ -98,13 +86,23 @@ export default {
         return false;
       }
 
-      characters.search(character).then(data => {
-        if (data.data.status === true) {
-          this.character = data.data.character;
+      characters.search(character).then(response => {
+        if (response.data.status === true) {
+          this.character = response.data.character;
+
+          this.stories = this.character.stories.items;
+
+          this.id = this.character.id;
+          this.name = this.character.name;
+          this.modified = this.character.modified;
+          this.resourceURI = this.character.resourceURI;
+          this.description = this.character.description;
+
+          this.thumbnail = this.character.thumbnail;
         }
       });
-    }
-  }
+    },
+  },
 };
 </script>
 

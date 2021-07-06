@@ -9,11 +9,13 @@
 </template>
 
 <script>
+import texts from "../documents/texts.js";
+
 export default {
   name: "Footer",
   data() {
     return {
-      copymsg: `Copyright @${new Date().getFullYear()} LaraVueMarvel All Rights Reserved`,
+      copymsg: texts.copyright,
     };
   },
 };
