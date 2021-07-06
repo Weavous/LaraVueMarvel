@@ -205,3 +205,7 @@ Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis fa
 * O local do arquivo de configuração `php.ini` pode ser visualizado digitando-se `php --ini` no terminal.
 
 * Caso ocorra um erro relacionado ao certificado SSL ao efetuar as requisições para o serviço externo, retornando uma mensagem de erro semelhante à essa `cURL error 60: SSL certificate problem: unable to get local issuer certificate`, pode-se resolver através da resposta presente em `https://stackoverflow.com/questions/24611640/curl-60-ssl-certificate-problem-unable-to-get-local-issuer-certificate`
+
+<h6>Dúvidas ❔</h6>
+
+* Quaisquer dúvidas ou sugestões quanto ao projeto, entrar em contato com <wesleyfloresterres@gmail.com>.
